@@ -21,7 +21,6 @@ const DiaryItem = ({ id, emotionId, createdDate, content }) => {
     if (window.confirm("일기를 정말 삭제할까요? 다시 복구되지 않아요!")) {
       // 일기 삭제 로직
       onDelete(id);
-      nav("/", { replace: true });
     }
   };
 
